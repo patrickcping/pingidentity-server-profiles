@@ -10,6 +10,8 @@
 
 pahost=${PA_CONSOLE_HOST:=localhost}
 
+echo "TEST ${PA_CONSOLE_HOST}"
+
 if test "${OPERATIONAL_MODE}" = "CLUSTERED_CONSOLE" || test "${OPERATIONAL_MODE}" = "STANDALONE"
 then
     echo "INFO: waiting for PingAccess to start before importing configuration"
